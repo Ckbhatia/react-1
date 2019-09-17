@@ -31,3 +31,14 @@
     transform: rotate(360deg);
   }
 }
+
+.list-item {
+  list-style: none;
+}
+
+.btn {
+  font-size: 20px;
+  margin: 4px;
+  /* padding: 8px 50px; */
+  letter-spacing: 1.5px;
+}
