@@ -31,21 +31,27 @@ import Card from './Card'
                 {this.state.data &&
                         <Navigation 
                         handleNav={this.handleNav}
-                        data={this.state.data} 
+                        data={this.state.data}
                     />
                 }
 
                 {/* Cards */}
-                {this.state.data &&
-                     this.state.data.filter(title => title.name === this.state.active)
-                .map(family => family.people.map((member, index) => { 
-                    return <Card key={index}
-                                name={member.name}
-                                src={member.image}
-                                text={member.description} 
-                            /> 
-                        }
-                    ))
+                {this.state.data && 
+                    <section className="card-section">
+                        <div className="card-container">
+                            {this.state.data &&
+                                this.state.data.filter(title => title.name === this.state.active)
+                                .map(family => family.people.map((member, index) => { 
+                                    return <Card key={index}
+                                                name={member.name}
+                                                src={member.image}
+                                                text={member.description} 
+                                            /> 
+                                    }
+                                ))
+                            }
+                        </div>
+                    </ section>
                 }
             </main>
         )
