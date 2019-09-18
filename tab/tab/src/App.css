@@ -69,3 +69,41 @@ table {
   word-spacing: 0.2rem;
   font-weight: bold;
 }
+
+/* MAIN */
+
+/* Navigation */
+.navigation-container {
+	width: 80%;
+	margin: 2rem auto;
+	/* border: 1px solid grey; */
+}
+
+.navitation-list-container {
+	list-style-type: none;
+	/* margin: 0 auto; */
+}
+
+.list-item {
+	display: inline-block;
+	font-size: 1.2rem;
+	padding: 0 0.1rem;
+}
+
+.nav-btn {
+	font-size: 1rem;
+	background-color: black;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 0.8rem 1rem;
+	margin: 0.5rem 0;
+}
+
+.nav-btn:hover {
+	color: yellow;
+}
+
+.active {
+	color: yellow;
+}
