@@ -11,7 +11,7 @@ export default function Card(props) {
         <section className="card-section">
             <div className="card-container">
                 <div className="card-top">
-                    <img src={src} alt="user image"></img>
+                    <img src={src} alt="user profile"></img>
                     <h3 className="user-header">{name}</h3>
                 </div>
                 <div className="card-bottom">
