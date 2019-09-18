@@ -29,9 +29,10 @@ import Card from './Card'
             <main className="main-container">
                 {/* Navigation */}
                 {this.state.data &&
-                        <Navigation 
+                    <Navigation 
                         handleNav={this.handleNav}
                         data={this.state.data}
+                        active={this.state.active}
                     />
                 }
 
