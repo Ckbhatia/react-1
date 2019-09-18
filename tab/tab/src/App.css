@@ -107,3 +107,57 @@ table {
 .active {
 	color: yellow;
 }
+
+/* Card */
+
+.card-section {
+	display: flex;
+}
+
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	/* margin: 0 0rem; */
+}
+
+.card {
+	width: 300px;
+	height: 200px;
+	background-color: black;
+	color: white;
+	margin: 0.6rem;
+	border: 5px solid yellow;
+	border-radius: 5px;
+	box-shadow: 6px 6px 14px black;
+}
+
+.card:hover {
+	box-shadow: 2px 2px 4px black;
+	/* color: yellow; */
+}
+
+.card-top {
+	display: flex;
+}
+
+.user-header {
+	font-size: 1.6rem;
+	margin: 1.1rem 0;
+}
+
+.card-top > img {
+	border: 1px solid white;
+	margin: 1.2rem;
+}
+
+.card-bottom {
+	margin: 1rem;
+}
+
+.card-para {
+	font-size: 1rem;
+	letter-spacing: 0.05rem;
+	line-height: 1.2rem;
+}
