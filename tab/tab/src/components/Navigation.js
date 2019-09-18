@@ -1,18 +1,19 @@
 import React from 'react';
 import '../App.css';
 
-export default function Navigation() {
-    // Navigation text
-    const navText = ['Starks', 'Lannisters', 'Baratheons', 'Targayens', 'Greyjoys',
-     'Tyrells', 'Tullys', 'Redwyn', 'Freys', 'Arryns', 'Dothrakle'];
-    
+export default function Navigation(props) {
+    const { data } = props;
+
     return (
             <section className="navigation-section wrapper">
                 {/* Navigation */}
                 <nav className="navigation-container">
-                    <ul className="navigation-list-container">
-                        {navText.map((text, index) => {
-                            return <li key={index} className="list-item"><a className="nav-link" href={text}>{text}</a></li>
+                    <ul onClick={props.handleNav} className="navigation-list-container">
+                    {/* Map the data and exract family */}
+                        {data.map((family, index) => {
+                            return <li key={index} className="list-item">
+                                      <button className="nav-btn">{family.name}</button>
+                                   </li>
                         })}
                     </ul>
                 </nav>
